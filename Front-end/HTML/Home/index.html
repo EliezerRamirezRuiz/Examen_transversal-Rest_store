@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="icon" href="../img/icono.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-md-3">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-success display-5" href="index.html" >Mi Jardineria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="index.html"><img src="/Front-end/HTML/img/icono.png" alt=""
+                width="30px"> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="home_login.html">Iniciar Sesion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="home_cre_login.html">Registrarme</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="donacion.html">Aporte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="producto.html">Productos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Image  -->
+  <div class="container-fluid p-0 m-0">
+    <div class="row">
+      <div class="col-12">
+        <img src="../img/banner-img.png" class="img-fluid p-0 m-0" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card border-0">
+          <h1 class="text-dark text-center">Sobre Nosotros</h1>
+          <img src="/Front-end/HTML/img/sn.png" class="card-img img-fluid" alt="...">
+        </div>
+      </div>
+      <div class="col-12">
+        <cite>
+          <div class="display-4 text-center">Somos una de las mejores empresas de jardineria en el mundo, damos
+            seguridad y entregamos el mejor servicios junto con los mejores productos</div>
+        </cite>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-light text-center text-lg-start ">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Nuestra iniciativa</h5>
+
+          <p>
+            mi jardineria nació con la misión de darle vida a los espacios, trayendo lo mejor de la naturaleza a los hogares
+            de cada persona. Queremos llevar las plantas a los distintos rincones de la ciudad, aportando así nuestro
+            granito de arena en construir un mundo más verde
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">¿Quieres saber mas?</h5>
+
+          <p>
+            Siguenos en nuestras redes sociales, acerca de nuestros productos y servicios, y mantente informado(a)
+          </p>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="index.html">Mi jardineria</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add('bg-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    });
+  </script>
+</body>
+
+</html>

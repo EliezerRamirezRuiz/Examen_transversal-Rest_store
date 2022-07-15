@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home Login</title>
+	<link rel="icon" href="../img/favicon_2.png" type="image/x-icon" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body style="min-height: 160vh">
+	<header>
+		<nav class="navbar navbar-expand-sm navbar-dark" style="background-color:rgb(136, 136, 136)">
+			<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+				data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+				aria-label="Toggle navigation"></button>
+			<div class="collapse navbar-collapse" id="collapsibleNavId">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="list-style: none;">
+					<li>
+						<a href="index.html"><img src="/Front/HTML/img/icono.png" alt="" width="30px"></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link text-dark" href="home_login.html">Iniciar Sesion</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section class="mb-5">
+		<div class="container-fluid m-0 pt-5">
+			<main role="main" class="container my-auto">
+				<div class="row">
+					<div id="login" class="col-lg-8 offset-lg-4 col-md-6 offset-md-3 col-12">
+						<h2 class="text-center">
+							Regístrate
+						</h2>
+						<form id="form">
+							<div class="mb-3">
+								<label for="Name" class="form-label">Nombre</label>
+								<input type="text" class="form-control text-center" id="nombre" aria-describedby="Nombre"
+									placeholder=" nombre" />
+							</div>
+							<div class="mb-3">
+								<label for="apellido" class="form-label">Apellidos</label>
+								<input type="text" class="form-control text-center" id="apellido" aria-describedby="Apellidos"
+									placeholder="apellidos" />
+							</div>
+							<div class="mb-3">
+								<label for="rut" class="form-label">Rut</label>
+								<input type="text" class="form-control text-center" id="rut" aria-describedby="Rut"
+									placeholder="99.999.999-9" />
+							</div>
+							<div class="mb-3">
+								<label for="direccion" class="form-label">Dirección</label>
+								<input type="text" class="form-control text-center" id="direccion" aria-describedby="Direccion"
+									placeholder=" dirección" />
+							</div>
+							<div class="mb-3">
+								<label for="region" class="form-label">Región</label>
+								<select class="form-control text-center" aria-label="Regiones" id="region">
+									<option value="0" selected>
+										 Seleccione una region 
+									</option>
+								</select>
+							</div>
+							<div class="mb-3">
+								<label for="provincia" class="form-label">Provincia</label>
+								<select class="form-control text-center" aria-label="Provincias" id="provincia">
+									<option value="0" selected>
+										 Seleccione una provincia 
+									</option>
+								</select>
+							</div>
+							<div class="mb-3">
+								<label for="comuna" class="form-label">Comuna</label>
+								<select class="form-control text-center" aria-label="Comunas" id="comuna">
+									<option value="0" selected>
+										 Seleccione una comuna 
+									</option>
+								</select>
+							</div>
+							<div class="mb-3">
+								<label for="telefono" class="form-label">Teléfono</label>
+								<input type="text" class="form-control text-center" id="telefono" aria-describedby="Telefono"
+									placeholder=" número fijo o móvil" />
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label">Correo
+									Electrónico</label>
+								<input type="email" class="form-control text-center" id="email"
+									aria-describedby="Correo electronico" placeholder="Email" />
+							</div>
+							<div class="mb-3">
+								<label for="password" class="form-label">Contraseña</label>
+								<input type="password" class="form-control" id="password" />
+							</div>
+							<div class="mb-3">
+								<label for="password" class="form-label">Confirme
+									Contraseña</label>
+								<input type="password" class="form-control" id="password2" />
+							</div>
+							<div class="d-grid gap-2 mt-3">
+								<button type="submit" class="btn btn-dark">
+									Enviar
+								</button>
+								<button type="reset" class="btn btn-dark">
+									Limpiar
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</main>
+		</div>
+	</section>
+	<script src="../../script/registerService.js"></script>
+</body>
+</html>
